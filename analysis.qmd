@@ -42,6 +42,7 @@ plot_top <- function(x, top = 10) {
   return(p)
 }
 
+
 get_most_frequent(babynames, select_sex = "F") |>
   plot_top()
 
