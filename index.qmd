@@ -1,0 +1,32 @@
+---
+title: "Hello_Quarto"
+---
+
+This is a Quarto website.
+
+-   un-ordered list test
+
+-   strange the spell checker does not know unordered
+
+-   
+
+![image_alt_text](/Users/seanwalsh/Desktop/test_image.png)
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
+
+
+```{r}
+1 + 1
+```
+
+-  *Understanding the different columns of the data set*
+
+- *Find the top 10 most frequently used baby names in the data for:*
+
+    -   *girls*
+
+    -   *boys*
+
+-  *Plot the yearly trend of the top 10 baby names*
