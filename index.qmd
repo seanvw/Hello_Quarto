@@ -10,23 +10,20 @@ This is a Quarto website.
 
 -   
 
-![image_alt_text](/Users/seanwalsh/Desktop/test_image.png)
+![image_alt_text](images/test_image.png)
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-
-
 
 ```{r}
 1 + 1
 ```
 
--  *Understanding the different columns of the data set*
+-   *Understanding the different columns of the data set*
 
-- *Find the top 10 most frequently used baby names in the data for:*
+-   *Find the top 10 most frequently used baby names in the data for:*
 
     -   *girls*
 
     -   *boys*
 
--  *Plot the yearly trend of the top 10 baby names*
+-   *Plot the yearly trend of the top 10 baby names*
