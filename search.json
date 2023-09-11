@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Hello_Quarto",
     "section": "",
-    "text": "This is a Quarto website.\n\nun-ordered list test\nstrange the spell checker does not know unordered\n\n\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\nUnderstanding the different columns of the data set\nFind the top 10 most frequently used baby names in the data for:\n\ngirls\nboys\n\nPlot the yearly trend of the top 10 baby names"
+    "text": "This is a Quarto website test. Requires R and RStudio to be updated. Otherwise, one gets errors\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\ntwo &lt;- 1 + 1\nprint(two)\n\n[1] 2"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "About this site\n\nprint(\"About\")\n\n[1] \"About\""
   },
   {
     "objectID": "analysis.html",
