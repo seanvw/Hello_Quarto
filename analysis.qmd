@@ -9,7 +9,6 @@ library(dplyr)
 library(ggplot2)
 ```
 
-
 ```{r}
 head(babynames) |> kable()
 ```
@@ -47,4 +46,3 @@ get_most_frequent(babynames, select_sex = "F") |>
   plot_top()
 
 ```
-
