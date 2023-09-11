@@ -47,4 +47,8 @@ plot_top <- function(x, top = 10) {
 get_most_frequent(babynames, select_sex = "F") |>
   plot_top()
 
+get_most_frequent(babynames, select_sex = "M") |>
+  plot_top()
+
+
 ```
