@@ -6,6 +6,12 @@ title: "Hello_Quarto"
 
 [Reusable analysis](https://sib-swiss.github.io/reproducible-analysis-training/) Make your research FAIRer with Quarto, GitHub and Zenodo
 
+## publishing on github
+
+[More info](https://sib-swiss.github.io/reproducible-analysis-training/exercises_git.html)
+
+`quarto publish gh-pages`
+
 ## Requires R and RStudio to be updated. Otherwise, one gets errors
 
 ![image_alt_text](images/test_image.png)
