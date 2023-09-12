@@ -2,15 +2,15 @@
 title: "Hello_Quarto"
 ---
 
-## the tutorial is at
+## The tutorial is at
 
 [Reusable analysis](https://sib-swiss.github.io/reproducible-analysis-training/) Make your research FAIRer with Quarto, GitHub and Zenodo
 
-## publishing on github
+## Publishing on github
 
 [More info](https://sib-swiss.github.io/reproducible-analysis-training/exercises_git.html)
 
-`quarto publish gh-pages`
+[Writes to](https://seanvw.github.io/Hello_Quarto/)
 
 ## Requires R and RStudio to be updated. Otherwise, one gets errors
 
