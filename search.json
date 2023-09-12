@@ -4,7 +4,21 @@
     "href": "index.html",
     "title": "Hello_Quarto",
     "section": "",
-    "text": "This is a Quarto website test. Requires R and RStudio to be updated. Otherwise, one gets errors\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\ntwo &lt;- 1 + 1\nprint(two)\n\n[1] 2"
+    "text": "Reusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo"
+  },
+  {
+    "objectID": "index.html#the-tutorial-is-at",
+    "href": "index.html#the-tutorial-is-at",
+    "title": "Hello_Quarto",
+    "section": "",
+    "text": "Reusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo"
+  },
+  {
+    "objectID": "index.html#requires-r-and-rstudio-to-be-updated.-otherwise-one-gets-errors",
+    "href": "index.html#requires-r-and-rstudio-to-be-updated.-otherwise-one-gets-errors",
+    "title": "Hello_Quarto",
+    "section": "Requires R and RStudio to be updated. Otherwise, one gets errors",
+    "text": "Requires R and RStudio to be updated. Otherwise, one gets errors\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
