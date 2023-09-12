@@ -82,5 +82,12 @@
     "title": "Analysis",
     "section": "report 4",
     "text": "report 4\n\n# get top 30 girl names in a matrix\n# with names in rows and years in columns\nprop_df &lt;- babynames |&gt; \n  filter(name %in% most_freq_girls$most_frequent$name[1:30] & sex == \"F\") |&gt;\n  filter(year &gt;= from_year) |&gt; \n  select(year, name, prop) |&gt;\n  pivot_wider(names_from = year,\n              values_from = prop)\n\n\nprop_mat &lt;- as.matrix(prop_df[, 2:ncol(prop_df)])\nrownames(prop_mat) &lt;- prop_df$name\n\n# create heatmap\npheatmap(prop_mat, cluster_cols = FALSE, scale = \"row\")\n\n\n\n\nFigure 5: Frequent female names"
+  },
+  {
+    "objectID": "analysis.html#report-5",
+    "href": "analysis.html#report-5",
+    "title": "Analysis",
+    "section": "report 5",
+    "text": "report 5\n\n# get most frequent girl names from 2010 onwards\nfrom_year &lt;- 2010\nmost_freq_girls &lt;- get_most_frequent(babynames, select_sex = \"F\",\n                                     from = from_year)\n\n# plot top 5 girl names\nmost_freq_girls |&gt;\n  plot_top(top = 5)\n\n# plot top 10 girl names\nmost_freq_girls |&gt;\n  plot_top(top = 10)\n\n# get top 30 girl names in a matrix\n# with names in rows and years in columns\nprop_df &lt;- babynames |&gt; \n  filter(name %in% most_freq_girls$most_frequent$name[1:30] & sex == \"F\") |&gt;\n  filter(year &gt;= from_year) |&gt; \n  select(year, name, prop) |&gt;\n  pivot_wider(names_from = year,\n              values_from = prop)\n\nprop_mat &lt;- as.matrix(prop_df[, 2:ncol(prop_df)])\nrownames(prop_mat) &lt;- prop_df$name\n\n# create heatmap\npheatmap(prop_mat, cluster_cols = FALSE, scale = \"row\")\n\n\n\n\n\n\n\n(a) Top 5\n\n\n\n\n\n\n\n(b) Top 10\n\n\n\n\n\n\n\n\n\n(c) Top 30\n\n\n\n\nFigure 6: Most popular girl names from 2010 onwards\n\n\n\nIn Figure 6 (a) and Figure 6 (b) the line plots are shown. To view trends of many names at once, Figure 6 (c) displays a heatmap."
   }
 ]
