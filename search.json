@@ -18,7 +18,7 @@
     "href": "index.html#publishing-on-github",
     "title": "Hello_Quarto",
     "section": "Publishing on github",
-    "text": "Publishing on github\nMore info\nWrites to"
+    "text": "Publishing on github\nIn the R terminal ..\nquarto publish gh-pages\nMore info\nWrites to"
   },
   {
     "objectID": "index.html#requires-r-and-rstudio-to-be-updated.-otherwise-one-gets-errors",
