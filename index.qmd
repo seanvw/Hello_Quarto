@@ -2,11 +2,17 @@
 title: "Hello_Quarto"
 ---
 
-This is a Quarto website test. Requires R and RStudio to be updated. Otherwise, one gets errors
+## the tutorial is at
+
+[Reusable analysis](https://sib-swiss.github.io/reproducible-analysis-training/) Make your research FAIRer with Quarto, GitHub and Zenodo
+
+## Requires R and RStudio to be updated. Otherwise, one gets errors
 
 ![image_alt_text](images/test_image.png)
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+# Some R code
 
 ```{r}
 two <- 1 + 1
