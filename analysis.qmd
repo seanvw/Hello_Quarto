@@ -11,9 +11,28 @@ library(tidyr)
 library(pheatmap)
 ```
 
+# cars example
+
+```{r}
+#| label: "fig-mpg-vs-drat"
+#| fig-cap: "mpg versus drat"
+#| fig-align: "left"
+library(ggplot2)
+mtcars |>
+  ggplot(aes(x = drat, y = mpg)) + geom_point() + theme_bw()
+```
+
+From @fig-mpg-vs-drat you can see there is a positive correlation.
+
+# baby names
+
+## data sample
+
 ```{r}
 head(babynames) |> kable()
 ```
+
+## functions
 
 ```{r}
 
@@ -44,30 +63,52 @@ plot_top <- function(x, top = 10) {
   return(p)
 }
 
-
-get_most_frequent(babynames, select_sex = "F") |>
-  plot_top()
-
-get_most_frequent(babynames, select_sex = "M") |>
-  plot_top()
-
-
 ```
 
+## report 1
+
 ```{r}
-# get most frequent girl names from 2010 onwards
+#| label: "fig-baby-f"
+#| fig-cap: "Frequent female names"
+#| fig-align: "right"
+get_most_frequent(babynames, select_sex = "F") |>
+  plot_top()
+```
+
+From @fig-baby-f we can see...
+
+## report 2
+
+```{r}
+#| label: "fig-baby-m"
+#| fig-cap: "Frequent male names"
+#| fig-align: "right"
+get_most_frequent(babynames, select_sex = "M") |>
+  plot_top()
+```
+
+## report 3
+
+```{r}
+#| label: "fig-baby-f-var"
+#| fig-cap: "Frequent female names from 2010"
+#| fig-align: "right"
 from_year <- 2010
+# get most frequent girl names from 2010 onwards
 most_freq_girls <- get_most_frequent(babynames, select_sex = "F",
                                      from = from_year)
 
-# plot top 5 girl names
+# plot top girl names
 most_freq_girls |>
   plot_top(top = 5)
+```
 
-# plot top 10 girl names
-most_freq_girls |>
-  plot_top(top = 10)
+## report 4
 
+```{r}
+#| label: "fig-baby-f-heat"
+#| fig-cap: "Frequent female names"
+#| fig-align: "right"
 # get top 30 girl names in a matrix
 # with names in rows and years in columns
 prop_df <- babynames |> 
@@ -76,6 +117,7 @@ prop_df <- babynames |>
   select(year, name, prop) |>
   pivot_wider(names_from = year,
               values_from = prop)
+
 
 prop_mat <- as.matrix(prop_df[, 2:ncol(prop_df)])
 rownames(prop_mat) <- prop_df$name
