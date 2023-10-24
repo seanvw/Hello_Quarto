@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-print("About")
-```
+[About me](https://seanvw.github.io/seanvw/ "About me")
