@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://seanvw.github.io/Hello_Quarto/analysis.html</loc>
+    <lastmod>2023-10-24T10:05:57.373Z</lastmod>
+  </url>
+  <url>
     <loc>https://seanvw.github.io/Hello_Quarto/index.html</loc>
-    <lastmod>2023-09-12T18:12:18.249Z</lastmod>
+    <lastmod>2023-10-24T10:05:47.370Z</lastmod>
   </url>
   <url>
     <loc>https://seanvw.github.io/Hello_Quarto/about.html</loc>
-    <lastmod>2023-09-12T18:12:19.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://seanvw.github.io/Hello_Quarto/analysis.html</loc>
-    <lastmod>2023-09-12T18:12:27.115Z</lastmod>
+    <lastmod>2023-10-24T10:05:47.795Z</lastmod>
   </url>
 </urlset>
