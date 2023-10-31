@@ -84,6 +84,13 @@
     "text": "Requires R and RStudio to be updated. Otherwise, one gets errors\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
+    "objectID": "post_hoc.html",
+    "href": "post_hoc.html",
+    "title": "Post Hoc Notes",
+    "section": "",
+    "text": "This is now my favored method for setting up a Quarto website template. Reason: simplicity and one can see what is going on.\n\nCreate github repo on web. Clone it locally.\nCreate a New Project &gt; Quarto Website within the clone as sub-folder but without the git option\nWith terminal, inspect Quarto files, then move them up from sub-folder. Delete sub-folder.\nEdit .gitignore adding site/ and .DS_Store/\nEdit _quarto.yml, add some Example #n files, edit index.qmd, about.qmd\nChoose a standard HTML theme from list html-themes\nCheck-in files to github\nquarto publish gh-pages"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

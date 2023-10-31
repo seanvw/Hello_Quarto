@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hello_Quarto - About</title>
+<title>Hello_Quarto - Post Hoc Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Analysis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./post_hoc.html" rel="" target="">
+    <a class="nav-link active" href="./post_hoc.html" rel="" target="" aria-current="page">
  <span class="menu-text">Post Hoc Notes</span></a>
   </li>  
 </ul>
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Post Hoc Notes</h1>
 </div>
 
 
@@ -131,7 +131,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="https://seanvw.github.io/seanvw/about.html" title="About me">About me</a></p>
+<p>This is now my favored method for setting up a Quarto website template. Reason: simplicity and one can see what is going on.</p>
+<ol type="1">
+<li><p>Create github repo on web. Clone it locally.</p></li>
+<li><p>Create a New Project &gt; Quarto Website within the clone as sub-folder but without the git option</p></li>
+<li><p>With terminal, inspect Quarto files, then move them up from sub-folder. Delete sub-folder.</p></li>
+<li><p>Edit .gitignore adding site/ and .DS_Store/</p></li>
+<li><p>Edit _quarto.yml, add some Example #n files, edit index.qmd, about.qmd</p></li>
+<li><p>Choose a standard HTML theme from list <a href="https://quarto.org/docs/output-formats/html-themes.html" title="html-themes">html-themes</a></p></li>
+<li><p>Check-in files to github</p></li>
+<li><p>quarto publish gh-pages</p></li>
+</ol>
 
 
 
