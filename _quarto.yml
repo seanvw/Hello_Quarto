@@ -9,10 +9,11 @@ website:
         text: Home
       - about.qmd
       - analysis.qmd
+      - post_hoc.qmd
 
 format:
   html:
-    theme: journal
+    theme: sketchy
     css: styles.css
     toc: true
 
