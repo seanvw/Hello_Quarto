@@ -60,35 +60,21 @@
     "href": "index.html",
     "title": "Hello_Quarto",
     "section": "",
-    "text": "Reusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo"
+    "text": "Thanks to SIB and Dr. Geert van Geest and Dr. Wandrille Duchemin for the excellent tutorial:\nReusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "index.html#the-tutorial",
-    "href": "index.html#the-tutorial",
+    "objectID": "index.html#hello-quarto",
+    "href": "index.html#hello-quarto",
     "title": "Hello_Quarto",
     "section": "",
-    "text": "Reusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo"
-  },
-  {
-    "objectID": "index.html#publishing-on-github",
-    "href": "index.html#publishing-on-github",
-    "title": "Hello_Quarto",
-    "section": "Publishing on github",
-    "text": "Publishing on github\nIn the R terminal ..\nquarto publish gh-pages\nMore info\nWrites to"
-  },
-  {
-    "objectID": "index.html#requires-r-and-rstudio-to-be-updated.-otherwise-one-gets-errors",
-    "href": "index.html#requires-r-and-rstudio-to-be-updated.-otherwise-one-gets-errors",
-    "title": "Hello_Quarto",
-    "section": "Requires R and RStudio to be updated. Otherwise, one gets errors",
-    "text": "Requires R and RStudio to be updated. Otherwise, one gets errors\n\n\n\nimage_alt_text\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Thanks to SIB and Dr. Geert van Geest and Dr. Wandrille Duchemin for the excellent tutorial:\nReusable analysis Make your research FAIRer with Quarto, GitHub and Zenodo\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "post_hoc.html",
     "href": "post_hoc.html",
     "title": "Post Hoc Notes",
     "section": "",
-    "text": "This is now my favored method for setting up a Quarto website template. Reason: simplicity and one can see what is going on.\n\nCreate github repo on web. Clone it locally.\nCreate a New Project &gt; Quarto Website within the clone as sub-folder but without the git option\nWith terminal, inspect Quarto files, then move them up from sub-folder. Delete sub-folder.\nEdit .gitignore adding site/ and .DS_Store/\nEdit _quarto.yml, add some Example #n files, edit index.qmd, about.qmd\nChoose a standard HTML theme from list html-themes\nCheck-in files to github\nquarto publish gh-pages"
+    "text": "This is now my favored method for setting up a Quarto website template.\nReasons: relatively simple and one can easily see what is going on.\nNoted here as recipe\n\nCreate github repo on GitHub web. Clone it locally.\nWithin Rstudio &gt; Create a New Project &gt; Quarto Website within the clone as sub-folder but without the git option\nWithin Rstudio Terminal, inspect Quarto files, then move them up from sub-folder. Delete the sub-folder.\nWithin Rstudio &gt; Edit .gitignore adding _site/ and .DS_Store/\nWithin Rstudio Terminal add some Example #n files, edit index.qmd, about.qmd\nWithin Rstudio &gt; Edit _quarto.yml to add Example files\nChoose a standard HTML theme from list html-themes and edit _quarto.yml appropriately\nCheck-in files to github\nWithin Rstudio Terminal run ‘quarto publish gh-pages’"
   },
   {
     "objectID": "about.html",

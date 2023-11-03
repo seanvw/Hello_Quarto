@@ -131,16 +131,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is now my favored method for setting up a Quarto website template. Reason: simplicity and one can see what is going on.</p>
+<p>This is now my favored method for setting up a Quarto website template.</p>
+<p>Reasons: relatively simple and one can easily see what is going on.</p>
+<p>Noted here as recipe</p>
 <ol type="1">
-<li><p>Create github repo on web. Clone it locally.</p></li>
-<li><p>Create a New Project &gt; Quarto Website within the clone as sub-folder but without the git option</p></li>
-<li><p>With terminal, inspect Quarto files, then move them up from sub-folder. Delete sub-folder.</p></li>
-<li><p>Edit .gitignore adding site/ and .DS_Store/</p></li>
-<li><p>Edit _quarto.yml, add some Example #n files, edit index.qmd, about.qmd</p></li>
-<li><p>Choose a standard HTML theme from list <a href="https://quarto.org/docs/output-formats/html-themes.html" title="html-themes">html-themes</a></p></li>
+<li><p>Create github repo on GitHub web. Clone it locally.</p></li>
+<li><p>Within Rstudio &gt; Create a New Project &gt; Quarto Website within the clone as sub-folder but <em>without the git option</em></p></li>
+<li><p>Within Rstudio Terminal, inspect Quarto files, then move them up from sub-folder. Delete the sub-folder.</p></li>
+<li><p>Within Rstudio &gt; Edit .gitignore adding _site/ and .DS_Store/</p></li>
+<li><p>Within Rstudio Terminal add some Example #n files, edit index.qmd, about.qmd</p></li>
+<li><p>Within Rstudio &gt; Edit _quarto.yml to add Example files</p></li>
+<li><p>Choose a standard HTML theme from list <a href="https://quarto.org/docs/output-formats/html-themes.html" title="html-themes">html-themes</a> and edit _quarto.yml appropriately</p></li>
 <li><p>Check-in files to github</p></li>
-<li><p>quarto publish gh-pages</p></li>
+<li><p>Within Rstudio Terminal run ‘quarto publish gh-pages’</p></li>
 </ol>
 
 
