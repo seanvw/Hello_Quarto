@@ -2,29 +2,12 @@
 title: "Hello_Quarto"
 ---
 
-## The tutorial
+## Hello Quarto
+
+Thanks to SIB and Dr. Geert van Geest and Dr. Wandrille Duchemin for the excellent tutorial:
 
 [Reusable analysis](https://sib-swiss.github.io/reproducible-analysis-training/) Make your research FAIRer with Quarto, GitHub and Zenodo
 
-## Publishing on github
-
-In the R terminal ..
-
-`quarto publish gh-pages`
-
-[More info](https://sib-swiss.github.io/reproducible-analysis-training/exercises_git.html)
-
-[Writes to](https://seanvw.github.io/Hello_Quarto/)
-
-## Requires R and RStudio to be updated. Otherwise, one gets errors
-
-![image_alt_text](images/test_image.png)
-
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-# Some R code
-
-```{r}
-two <- 1 + 1
-print(two)
-```
+# 

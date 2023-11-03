@@ -2,20 +2,26 @@
 title: "Post Hoc Notes"
 ---
 
-This is now my favored method for setting up a Quarto website template. Reason: simplicity and one can see what is going on.
+This is now my favored method for setting up a Quarto website template.
 
-1.  Create github repo on web. Clone it locally.
+Reasons: relatively simple and one can easily see what is going on.
 
-2.  Create a New Project \> Quarto Website within the clone as sub-folder but without the git option
+Noted here as recipe
 
-3.  With terminal, inspect Quarto files, then move them up from sub-folder. Delete sub-folder.
+1.  Create github repo on GitHub web. Clone it locally.
 
-4.  Edit .gitignore adding site/ and .DS_Store/
+2.  Within Rstudio \> Create a New Project \> Quarto Website within the clone as sub-folder but *without the git option*
 
-5.  Edit \_quarto.yml, add some Example #n files, edit index.qmd, about.qmd
+3.  Within Rstudio Terminal, inspect Quarto files, then move them up from sub-folder. Delete the sub-folder.
 
-6.  Choose a standard HTML theme from list [html-themes](https://quarto.org/docs/output-formats/html-themes.html "html-themes")
+4.  Within Rstudio \> Edit .gitignore adding \_site/ and .DS_Store/
 
-7.  Check-in files to github
+5.  Within Rstudio Terminal add some Example #n files, edit index.qmd, about.qmd
 
-8.  quarto publish gh-pages
+6.  Within Rstudio \> Edit \_quarto.yml to add Example files
+
+7.  Choose a standard HTML theme from list [html-themes](https://quarto.org/docs/output-formats/html-themes.html "html-themes") and edit \_quarto.yml appropriately
+
+8.  Check-in files to github
+
+9.  Within Rstudio Terminal run 'quarto publish gh-pages'
