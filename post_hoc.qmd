@@ -2,19 +2,25 @@
 title: "Post Hoc Notes"
 ---
 
-This is now my favored method for setting up a Quarto website template.
+## Favored method for setting up a Quarto website template.
 
-Reasons: relatively simple and one can easily see what is going on.
-
-Noted here as recipe
+Reasons: relatively simple and one can easily see what is going on in terms of files generated on the filesystem
 
 1.  Create github repo on GitHub web. Clone it locally.
 
-2.  Within Rstudio \> Create a New Project \> Quarto Website within the clone as sub-folder but *without the git option*
+2.  Within Rstudio \> Create a New Project \> Quarto Website within the clone as sub-folder but *without the git option* and using the same name as the repo
 
 3.  Within Rstudio Terminal, inspect Quarto files, then move them up from sub-folder. Delete the sub-folder.
 
-4.  Within Rstudio \> Edit .gitignore adding \_site/ and .DS_Store/
+4.  Within Rstudio \> Edit .gitignore adding:
+
+```         
+_site/
+.DS_Store/ 
+/.quarto/
+.gitignore
+.Rhistory
+```
 
 5.  Within Rstudio Terminal add some Example #n files, edit index.qmd, about.qmd
 
@@ -25,3 +31,24 @@ Noted here as recipe
 8.  Check-in files to github
 
 9.  Within Rstudio Terminal run 'quarto publish gh-pages'
+
+## Software versions
+
+Especially as I will use a beta version to look at Dashboards that will be soon supported in a stable release
+
+```{bash}
+# at the time of writing the stable release is 1.3.450
+# Quarto beta install 
+quarto -v 
+```
+
+```{bash}
+# python
+python3 -V
+```
+
+```{r}
+# R test - a good rational approximation to a math joke
+message(paste0("Rough Pie: ", 355/113, "\n",
+               " Real Pi : ", pi))
+```
