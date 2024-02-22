@@ -185,9 +185,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Reasons: relatively simple and one can easily see what is going on in terms of files generated on the filesystem</p>
 <ol type="1">
 <li><p>Create github repo on GitHub web. Clone it locally.</p></li>
-<li><p>Within Rstudio &gt; Create a New Project &gt; Quarto Website within the clone as sub-folder but <em>without the git option</em></p></li>
+<li><p>Within Rstudio &gt; Create a New Project &gt; Quarto Website within the clone as sub-folder but <em>without the git option</em> and using the same name as the repo</p></li>
 <li><p>Within Rstudio Terminal, inspect Quarto files, then move them up from sub-folder. Delete the sub-folder.</p></li>
-<li><p>Within Rstudio &gt; Edit .gitignore adding _site/ and .DS_Store/</p></li>
+<li><p>Within Rstudio &gt; Edit .gitignore adding:</p></li>
+</ol>
+<pre><code>_site/
+.DS_Store/ 
+/.quarto/
+.gitignore
+.Rhistory</code></pre>
+<ol start="5" type="1">
 <li><p>Within Rstudio Terminal add some Example #n files, edit index.qmd, about.qmd</p></li>
 <li><p>Within Rstudio &gt; Edit _quarto.yml to add Example files</p></li>
 <li><p>Choose a standard HTML theme from list <a href="https://quarto.org/docs/output-formats/html-themes.html" title="html-themes">html-themes</a> and edit _quarto.yml appropriately</p></li>
@@ -199,24 +206,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="software-versions">Software versions</h2>
 <p>Especially as I will use a beta version to look at Dashboards that will be soon supported in a stable release</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># at the time of writing the stable release is 1.3.450</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Quarto beta install </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">-v</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># at the time of writing the stable release is 1.3.450</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Quarto beta install </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">-v</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1.4.489</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-V</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># python</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-V</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Python 3.12.0</code></pre>
+<pre><code>Python 3.11.5</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R test - a good rational approximation to a math joke</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="fu">paste0</span>(<span class="st">"Rough Pie: "</span>, <span class="dv">355</span><span class="sc">/</span><span class="dv">113</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">" Real Pi : "</span>, pi))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># R test - a good rational approximation to a math joke</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="fu">paste0</span>(<span class="st">"Rough Pie: "</span>, <span class="dv">355</span><span class="sc">/</span><span class="dv">113</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>               <span class="st">" Real Pi : "</span>, pi))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rough Pie: 3.14159292035398
  Real Pi : 3.14159265358979</code></pre>
